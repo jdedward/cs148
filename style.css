@@ -1,0 +1,293 @@
+body{
+    margin: 36px auto;
+    width: 90%;
+    
+}
+
+#page{
+    margin: 0 auto 53px;
+    width: 93.75%; /* 900px / 960px */
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#main{
+    
+    float: left;
+    width: 62.8888889%; /* 566px / 900px */
+}
+
+#other{
+    float: right;
+    width: 36.7777778%; /* 331px / 900px */
+}
+
+#container{
+    width:93.75%;
+    margin:0 auto 0 auto;
+}
+
+
+
+/* header section */
+header h1 {
+    padding: 0em;
+    font-size: 2em;
+    
+}
+
+/* nav section */
+nav ol {
+    padding:0em;
+   /* padding-left: 5.33333333%;  /* 48px / 900px */
+}
+nav ol li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 3em;
+}
+
+/* article section */
+/* un comment and see what happens */
+/*
+article{
+    height: 200px;
+    overflow: auto;
+}
+*/
+
+article h1 ,article p, article table{
+   padding: 0em;/* 48px / 566px */
+   
+   
+}
+
+/* aside section */
+aside {
+    margin: 0 auto;
+    width: 69.7885196%; /* 231px / 331px */
+}
+aside h2, aside p{
+    padding: .2em 8.48056537% .2em 8.48056537%; /* 48px / 566px */
+}
+
+/* footer section */
+footer{
+    clear: both;
+    background-color: #aaaaff;
+    border-top-right-radius:015px;
+    border-bottom-left-radius:015px;
+    padding: 0.8em 5.33333333%;  /* 48px / 900px */
+}
+
+img.table
+{
+        padding: .2em 8.48056537% .2em 8.48056537%; /* 48px / 566px */
+	width: 150px;
+	height: auto;
+	border-radius: 2px;
+}
+
+
+
+
+
+/*////////////////////startstyle1/////////////////////*/
+
+
+body#form{
+    margin: auto;
+    width: 600px;
+}
+#content{
+    margin: auto;
+    text-align: center;
+    width: 600px;
+   
+}
+fieldset {
+    border: 1px solid #00498e;
+    width: 440px;
+}
+
+fieldset.wrapper {
+    border: 0;
+    margin: 50px;
+}
+
+fieldset.wrapper legend {
+    color: #00498e;
+    font-weight: bold; 
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+fieldset.wrapper > legend {
+    /* not supported in ie. i only want a legend if it follows the class wrapper */
+    font-size: 2em; 
+}
+
+label {
+    color: #005cb3;
+    font-weight: bold;
+    font-size: .9em; 
+    display: block;
+}
+
+.required {
+    font-weight:bolder;
+    font-style:italic;
+}
+
+label.required:before {
+    content: "* ";
+}
+
+span.required:after {
+    color: #000;
+    content: " are in italics and marked with an *";
+}
+
+input {
+    display: block; 
+    border: 1px solid #00498e; 
+    width: 430px; 
+    margin-bottom: 10px;
+    
+}
+
+input.hidden {
+    display: inline; 
+    border: 0; 
+    width: 0; 
+    margin-bottom: 0px;
+}
+
+label input {
+    display: inline;
+    border: 0;
+    width: auto;
+    margin: 0 5px 0 0;
+}
+
+input.button {
+    display: inline;
+    width: auto;
+    margin: 0 0 0 100px;
+    
+}
+
+form {
+    background : #ccccff; /* blue */
+    border : #0000CC double 4px;
+    width: 100%;
+    
+}
+
+.mistake {
+    color: #fff;
+    background-color:#800;
+    border: thin solid #000;
+}
+
+#errors ol li{
+    color: #800;
+}
+
+
+
+/* Items used for displaying data in data.php */
+table{
+    margin-left: 0em;
+    border-collapse: collapse; 
+    border: solid thick #000;
+}
+
+th{
+    background-color: wheat;
+}
+
+td, th {
+    border: thin solid gray;
+    padding: 1em;
+}
+
+
+tr.odd{
+    background-color: #FFFFD5;
+}
+
+
+tr.even{
+    background-color: lightcyan;
+}
+
+tr:hover{
+    background-color: lightgray;
+
+
+
+
+/*///////////////endstyle1/////////////////////////////*/
+
+
+
+
+
+
+
+
+/* setting the design to be 900px wide 
+   with two columns. 
+*/
+
+body{
+    max-width: 900px;
+}
+
+#main{
+	float: left;
+	width: 62.8888889%; /* 566px / 900px */
+    }
+
+    #other{
+	float: left;
+	width: 36.7777778%; /* 331px / 900px */
+    }
+
+
+    
+    
+/* make it responvive */
+
+
+
+
+/* i am not crazy about this but i make each column the same size */
+@media screen and (max-width:850px){
+    
+    #main{
+	float: left;
+	width: 50%; 
+    }
+
+    #other{
+	float: left;
+	width: 50%; 
+    }
+
+}
+
+@media screen and (max-width: 530px){
+    #main{
+	float: left;
+	width: 100%; 
+    }
+
+    #other{
+	float: none;
+        clear: both;
+	width: 100%;
+    }
+    
+}
